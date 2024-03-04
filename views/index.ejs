@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+    <% posts.forEach((post)=> { %>
+        <li>
+            <h2><%= post.title %></h2>
+            <h3><%= post.nickname %></h3>
+            <h4><%= post.publishedAt %></h4>
+            <h5><%= post.author %></h5>
+            <img src="<%= post.mainImage %>" alt="<%= post.mainImage %>">
+        </li>
+    <% }) %>
+</ul>
+  
+  <script src="/main.js"></script>
+</body>
+</html>
